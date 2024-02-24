@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etRegisterFullname"
+                android:hint="Fullname"
+                android:maxLines="1"
+                android:lines="1"
+                fontPath="@string/fontRobotoSlabRegular"
+                android:scrollHorizontally="true"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/etRegisterLastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etRegisterEmail"
+                android:hint="Email"
+                android:maxLines="1"
+                android:lines="1"
+                fontPath="@string/fontRobotoSlabRegular"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/etRegisterPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etRegisterPhone"
+                android:hint="Phone number"
+                android:maxLines="1"
+                android:lines="1"
+                fontPath="@string/fontRobotoSlabRegular"
+                android:inputType="phone"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/etRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:hint="Password"
+                android:maxLines="1"
+                android:lines="1"
+                fontPath="@string/fontRobotoSlabRegular"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/cbAgreeToTerms"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/cbAgreeToTerms"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:imeOptions="actionNext"
+            fontPath="@string/fontRobotoSlabRegular"
+            android:nextFocusDown="@+id/bnRegister"
+            android:text="I Agree to Fish Happy term of service"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="@string/fontRobotoSlabBold"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectangle_round_corner"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_activity_title">24sp</dimen>
+    <dimen name="about_activity_image">144dp</dimen>
+    <dimen name="global_margin_normal">16dp</dimen>
+</resources>

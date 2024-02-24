@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "781394689857",
+    "firebase_url": "https://api-project-781394689857.firebaseio.com",
+    "project_id": "api-project-781394689857",
+    "storage_bucket": "api-project-781394689857.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781394689857:android:5485a1e21684f58e",
+        "android_client_info": {
+          "package_name": "tz.co.fishhappy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781394689857-5nhs7ogg4i2spq4ebfvcqd8qj45nhpvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBRXo0nOdon5EMb_d75N6gp5d9hq_fn9g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

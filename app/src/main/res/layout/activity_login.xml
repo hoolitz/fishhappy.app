@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivLoginBackground"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/fishhappy_white"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="32dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/brown_500"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etLoginUsername"
+                    android:hint="Email"
+                    android:textColorHint="@color/brown_500"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:scrollHorizontally="true"
+                    fontPath="@string/fontRobotoSlabRegular"
+                    android:textColor="@color/brown_900"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/brown_500"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etLoginPassword"
+                    android:hint="Password"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/brown_900"
+                    android:inputType="textPassword"
+                    fontPath="@string/fontRobotoSlabRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvLoginForgotPassword"
+                android:layout_width="wrap_content"
+                android:text="Forgot password"
+                android:textColor="@color/brown_900"
+                android:layout_gravity="right"
+                fontPath="@string/fontRobotoSlabRegular"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bnLogin"
+                android:layout_marginTop="16dp"
+                android:text="Login"
+                fontPath="@string/fontRobotoSlabBold"
+                android:textColor="@color/white"
+                android:background="@drawable/rectangle_round_corner"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvLoginRegister"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/brown_900"
+                fontPath="@string/fontRobotoSlabRegular"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:text="I am new! Register here."/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

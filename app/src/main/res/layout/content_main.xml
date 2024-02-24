@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:background="@color/grey_100"
+        android:id="@+id/vp_main"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvCartItems"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:background="@color/brown_50"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:src="@drawable/ic_action_cart"
+                android:padding="8dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:text="Items in cart, "
+                android:layout_marginLeft="8dp"
+                fontPath="@string/fontRobotoSlabRegular"
+                android:textColor="@color/brown_900"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tvCartItemCount"
+                android:text="9"
+                android:layout_marginLeft="8dp"
+                fontPath="@string/fontRobotoSlabBold"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/brown_900"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/bnViewCart"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|end"
+                android:text="Confirm"
+                android:background="@drawable/rectangle_corner"
+                android:textColor="@color/white"
+                fontPath="@string/fontRobotoSlabBold"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

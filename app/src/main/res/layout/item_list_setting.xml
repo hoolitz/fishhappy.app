@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivSettingItemIcon"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/tvSettingItemTitle"
+        android:text="Settings"
+        android:textSize="18sp"
+        fontPath="@string/fontRobotoSlabRegular"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/grey_800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
