@@ -20,7 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:src="@drawable/fishhappy_white" />
+            android:src="@drawable/fishhappy_white"
+            android:contentDescription="@string/fish_happy_logo" />
 
         <LinearLayout
             android:layout_marginTop="20dp"
@@ -38,6 +39,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textColorHint="@color/brown_500">
 
                 <EditText
@@ -57,6 +59,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textColorHint="@color/brown_500">
 
                 <EditText
@@ -102,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="16dp"
                 android:text="I am new! Register here."
                 android:textColor="@color/brown_900" />
 

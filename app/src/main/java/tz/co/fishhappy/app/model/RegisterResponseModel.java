@@ -24,4 +24,5 @@ public class RegisterResponseModel {
         this.token = token;
     }
 
+
 }

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -87,6 +88,7 @@ public class RegisterActivity extends BaseAppCompatActivity {
                 .baseUrl(EndPointsUrls.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
+
         RegisterService service = retrofit.create(RegisterService.class);
         Call call = service.register(new RegisterModel(mEtFullname.getText().toString(), mEtEmail.getText().toString(),
                 mEtPhone.getText().toString(), mEtPassword.getText().toString()));
@@ -97,6 +99,8 @@ public class RegisterActivity extends BaseAppCompatActivity {
             public void onResponse(Call<RegisterResponseModel> call, Response<RegisterResponseModel> response) {
                 enableCotrols(true);
                 mProgressDialog.dismiss();
+
+                Log.d("REGISTER_API", String.valueOf(response.isSuccessful()));
 
                 if(response.isSuccessful()){
                     RegisterResponseModel model = response.body();

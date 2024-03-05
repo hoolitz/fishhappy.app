@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Fish Happy</string>
-    <string name="version_name_number">Version 1.0.1</string>
+    <string name="version_name_number">Version 1.1.0</string>
     <string name="copyright_statement">All right reserved. Copyright of Fish Happy</string>
     <string name="app_introduction">Fish Happy gives you easiest way to shop your fish groceries with few click straight from your mobile</string>
     <string name="fish_happy">Fish Happy</string>
@@ -23,4 +23,5 @@
     <string name="my_account">My Account</string>
     <string name="complete_form">Please complete the form</string>
     <string name="updating">Updating...</string>
+    <string name="fish_happy_logo">fish happy logo</string>
 </resources>

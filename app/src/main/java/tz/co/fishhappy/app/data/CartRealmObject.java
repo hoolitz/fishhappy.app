@@ -10,8 +10,10 @@ import io.realm.annotations.Required;
 
 public class CartRealmObject extends RealmObject {
 
-    @PrimaryKey private int id;
-    @Required private String name;
+    @PrimaryKey
+    private int id;
+    @Required
+    private String name;
     private int price;
     private int quantity;
     private long createdAt;

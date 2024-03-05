@@ -2,6 +2,7 @@ package tz.co.fishhappy.app.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -108,8 +109,9 @@ public class FishAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 ((ViewHolder) vh).tvName.setText(model.getName());
                 ((ViewHolder) vh).tvPrice.setText(Utils.formatToMoney(
                         String.valueOf(model.getPrice())) + " Tshs");
-                Picasso.get()
-                        .load(model.getPhoto().getUrl())
+                        Picasso.get()
+//                        .load(model.getPhoto().getUrl()) // This will be used to retrieve image of the fish.
+                        .load(Uri.parse("https://hooli.bongomusicawards.co.tz/storage/images/fish%201.jpg"))
                         .error(R.drawable.splash_screen)
                         .placeholder(R.drawable.splash_screen)
                         .into(((ViewHolder) vh).ivPhoto);
@@ -133,8 +135,7 @@ public class FishAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                                 .addConverterFactory(GsonConverterFactory.create(gson))
                                 .build();
                         FavoriteAddService service = retrofit.create(FavoriteAddService.class);
-                        Call call = service.addFavorite("Bearer " + mToken,
-                                model.getId());
+                        Call call = service.addFavorite("Bearer " + mToken, model.getId());
 
                         call.enqueue(new retrofit2.Callback<FavoriteAddModel>(){
 
@@ -156,9 +157,8 @@ public class FishAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
                             @Override
                             public void onFailure(Call<FavoriteAddModel> call, Throwable t) {
-                                /*System.out.println("Liked fail");
-                                Toast.makeText(mContext, "Ooops! something went wrong.",
-                                        Toast.LENGTH_LONG).show();*/
+//                                System.out.println("Liked fail");
+                                Toast.makeText(mContext, "Ooops! something went wrong.",Toast.LENGTH_LONG).show();
                                 Picasso.get()
                                         .load(R.drawable.ic_action_favorite_not)
                                         .into(((ViewHolder) vh).ivFavorite);

@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -139,7 +140,7 @@ public class MainActivity extends BaseAppCompatActivity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.menu_action_setting:
                 startActivity(new Intent(MainActivity.this, SettingActivity.class));
                 return true;
@@ -157,8 +158,10 @@ public class MainActivity extends BaseAppCompatActivity implements
     }
 
     public void checkItemInCart() {
-        RealmResults<CartRealmObject> result = mRealm.where(CartRealmObject.class)
-                .findAllAsync();
+
+       RealmResults<CartRealmObject> result = mRealm.where(CartRealmObject.class).findAllAsync();
+
+       Log.d("CART_REALM",result.asJSON());
 
         result.addChangeListener(new RealmChangeListener<RealmResults<CartRealmObject>>() {
             @Override

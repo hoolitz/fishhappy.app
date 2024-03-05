@@ -31,6 +31,7 @@ import tz.co.fishhappy.app.utility.Utils;
 
 /**
  * Created by Simon on 27-Apr-17.
+ * Updated by Kelvin on 26-Feb-23.
  */
 
 public class LoginActivity extends BaseAppCompatActivity {

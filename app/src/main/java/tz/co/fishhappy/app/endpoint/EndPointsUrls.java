@@ -2,11 +2,13 @@ package tz.co.fishhappy.app.endpoint;
 
 /**
  * Created by Simon on 29-Apr-17.
+ * Updated by Kelvin on 26-Feb-23.
  */
 
 public class EndPointsUrls {
 
-    public static final String BASE_URL = "http://174.138.74.195/";
+//    public static final String BASE_URL = "http://174.138.74.195/";
+    public static final String BASE_URL = "https://hooli.bongomusicawards.co.tz/";
     public static final String API_LOGIN = "api/cstmr/login";
     public static final String API_REGISTER = "api/cstmr/register";
     public static final String API_LIST_CATEGORY = "api/cstmr/categories";
