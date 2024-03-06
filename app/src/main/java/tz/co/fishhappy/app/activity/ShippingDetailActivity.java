@@ -44,7 +44,6 @@ import retrofit2.Call;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import tz.co.fishhappy.app.BuildConfig;
 import tz.co.fishhappy.app.R;
 import tz.co.fishhappy.app.data.CartRealmObject;
 import tz.co.fishhappy.app.endpoint.CartService;
