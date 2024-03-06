@@ -56,6 +56,9 @@ public class SettingActivity extends BaseAppCompatActivity implements SettingAda
         model = new SettingsModel("My Account", R.drawable.ic_action_user);
         mList.add(model);
 
+        model = new SettingsModel("Shipping Management", R.drawable.ic_shipping);
+        mList.add(model);
+
         model = new SettingsModel("Change Password", R.drawable.ic_action_password);
         mList.add(model);
 

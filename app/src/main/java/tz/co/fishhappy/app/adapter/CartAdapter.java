@@ -1,6 +1,7 @@
 package tz.co.fishhappy.app.adapter;
 
 import android.content.Context;
+import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -104,14 +105,12 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 final CartRealmObject model = mList.get(position-1);
 
                 ((ViewHolder) vh).tvName.setText(model.getName());
-                ((ViewHolder) vh).tvPrice.setText(Utils.formatToMoney(
-                        String.valueOf(model.getPrice())) + " Tshs");
+                ((ViewHolder) vh).tvPrice.setText(Utils.formatToMoney(String.valueOf(model.getPrice())) + " Tshs");
                 ((ViewHolder) vh).tvQuantity.setText(String.valueOf(model.getQuantity()));
 
                 int subTotal = model.getPrice() * model.getQuantity();
 
-                ((ViewHolder) vh).tvSubTotal.setText(Utils.formatToMoney(
-                        String.valueOf(subTotal))+" Tshs");
+                ((ViewHolder) vh).tvSubTotal.setText(Utils.formatToMoney(String.valueOf(subTotal))+" Tshs");
 
                 ((ViewHolder) vh).ivAddQty.setOnClickListener(new View.OnClickListener() {
                     @Override

@@ -24,6 +24,7 @@ import tz.co.fishhappy.app.activity.AboutActivity;
 import tz.co.fishhappy.app.activity.ChangePasswordActivity;
 import tz.co.fishhappy.app.activity.LoginActivity;
 import tz.co.fishhappy.app.activity.NotificationActivity;
+import tz.co.fishhappy.app.activity.ShippingManagementActivity;
 import tz.co.fishhappy.app.activity.UserAccountActivity;
 import tz.co.fishhappy.app.activity.WebViewActivity;
 import tz.co.fishhappy.app.model.SettingsModel;
@@ -67,30 +68,33 @@ public class SettingAdapter extends RecyclerView.Adapter<SettingAdapter.ViewHold
                     mContext.startActivity(new Intent(mContext, UserAccountActivity.class));
                     break;
                 case 1:
-                    mContext.startActivity(new Intent(mContext, ChangePasswordActivity.class));
+                    mContext.startActivity(new Intent(mContext, ShippingManagementActivity.class));
                     break;
                 case 2:
-                    mContext.startActivity(new Intent(mContext, NotificationActivity.class));
+                    mContext.startActivity(new Intent(mContext, ChangePasswordActivity.class));
                     break;
                 case 3:
+                    mContext.startActivity(new Intent(mContext, NotificationActivity.class));
+                    break;
+                case 4:
                     mContext.startActivity(new Intent(mContext, WebViewActivity.class)
                             .putExtra("url", "http://http://174.138.74.195/")
                             .putExtra("title","Privacy Policy"));
                     break;
-                case 4:
+                case 5:
                     mContext.startActivity(new Intent(mContext, WebViewActivity.class)
                             .putExtra("url","http://http://174.138.74.195/")
                             .putExtra("title", "Terms of Service"));
                     break;
-                case 5:
+                case 6:
                     mContext.startActivity(new Intent(mContext, WebViewActivity.class)
                             .putExtra("url","http://http://174.138.74.195/")
                             .putExtra("title", "Frequently Asked Question"));
                     break;
-                case 6:
+                case 7:
                     mContext.startActivity(new Intent(mContext, AboutActivity.class));
                     break;
-                case 7:
+                case 8:
                     mListener.onLogout();
                     break;
             }
