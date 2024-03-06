@@ -24,4 +24,7 @@
     <string name="complete_form">Please complete the form</string>
     <string name="updating">Updating...</string>
     <string name="fish_happy_logo">fish happy logo</string>
+    <string name="title_activity_shipping_management">ShippingManagementActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

@@ -152,9 +152,7 @@ public class ShippingDetailActivity extends BaseAppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
         CartService service = retrofit.create(CartService.class);
-        Call call = service.sendOrderItems("Bearer " +
-                        mPref.getString(getString(R.string.pref_login_token),""),
-                new CartRequestModel(getOrderItems()));
+        Call call = service.sendOrderItems("Bearer " + mPref.getString(getString(R.string.pref_login_token),""), new CartRequestModel(getOrderItems()));
 
         call.enqueue(new retrofit2.Callback<CartResponseModel>(){
 
@@ -162,6 +160,12 @@ public class ShippingDetailActivity extends BaseAppCompatActivity {
             public void onResponse(Call<CartResponseModel> call, Response<CartResponseModel> response) {
                 enableCotrols(true);
                 mProgressDialog.dismiss();
+
+//                System.out.println(new CartRequestModel(getOrderItems()));
+//                System.out.println(response.errorBody());
+//                Log.d("CART", String.valueOf(response.code()));
+//                Log.d("CART", String.valueOf(response.isSuccessful()));
+
 
                 if(response.isSuccessful()){
                     CartResponseModel model = response.body();
