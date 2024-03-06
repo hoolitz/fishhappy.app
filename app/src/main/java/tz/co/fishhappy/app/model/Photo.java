@@ -7,7 +7,7 @@ public class Photo{
 	@SerializedName("url")
 	private String url;
 
-	@SerializedName("uri")
+	@SerializedName("imageUrl")
 	private String uri;
 
 	@SerializedName("name")
