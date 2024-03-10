@@ -3,35 +3,33 @@ package tz.co.fishhappy.app.firebase;
 //import com.google.firebase.iid.FirebaseInstanceId;
 //import com.google.firebase.iid.FirebaseInstanceIdService;
 
+import android.util.Log;
+
+import com.google.firebase.messaging.FirebaseMessagingService;
+
+
 /**
  * Created by Simon on 07-May-17.
  */
 
 //public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 //
-//    /**
-//     * Called if InstanceID token is updated. This may occur if the security of
-//     * the previous token had been compromised. Note that this is called when the InstanceID token
-//     * is initially generated so this is where you would retrieve the token.
-//     */
+//    private static final String TAG = "MyFirebaseIIDService";
+//
+//    // Called when the Instance ID token is generated or refreshed
 //    @Override
 //    public void onTokenRefresh() {
-//        // Get updated InstanceID token.
+//        // Get updated InstanceID token
 //        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+//        Log.d(TAG, "Refreshed token: " + refreshedToken);
 //
-//        //Send new token to server
+//        // You can implement your own logic here to send the token to your server
 //        sendRegistrationToServer(refreshedToken);
 //    }
 //
-//    /**
-//     * Persist token to third-party servers.
-//     *
-//     * Modify this method to associate the user's FCM InstanceID token with any server-side account
-//     * maintained by your application.
-//     *
-//     * @param token The new token.
-//     */
+//    // You can implement your own logic here to send the token to your server
 //    private void sendRegistrationToServer(String token) {
-//        // TODO: Implement this method to send token to your app server.
+//        // Send the token to your server or perform any other tasks
 //    }
 //}
+
