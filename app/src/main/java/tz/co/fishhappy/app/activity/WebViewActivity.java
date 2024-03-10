@@ -1,9 +1,8 @@
 package tz.co.fishhappy.app.activity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
@@ -42,7 +41,8 @@ public class WebViewActivity extends BaseAppCompatActivity {
             webSettings.setJavaScriptEnabled(true);
             webSettings.setDatabaseEnabled(true);
             webSettings.setDomStorageEnabled(true);
-            webSettings.setAppCacheEnabled(true);
+//            webSettings.setAppCacheEnabled(true);
+
             webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
 
             mWebView.setWebViewClient(new MyWebViewClient());

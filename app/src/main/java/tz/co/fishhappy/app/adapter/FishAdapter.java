@@ -1,9 +1,8 @@
 package tz.co.fishhappy.app.adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.squareup.picasso.Picasso;
 
-import java.io.IOException;
 import java.util.List;
 
 import retrofit2.Call;
@@ -24,14 +22,8 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import tz.co.fishhappy.app.R;
-import tz.co.fishhappy.app.activity.CartActivity;
-import tz.co.fishhappy.app.activity.MainActivity;
-import tz.co.fishhappy.app.endpoint.CartService;
 import tz.co.fishhappy.app.endpoint.EndPointsUrls;
 import tz.co.fishhappy.app.endpoint.FavoriteAddService;
-import tz.co.fishhappy.app.model.CartModel;
-import tz.co.fishhappy.app.model.CartRequestModel;
-import tz.co.fishhappy.app.model.CartResponseModel;
 import tz.co.fishhappy.app.model.FavoriteAddModel;
 import tz.co.fishhappy.app.model.FishModel;
 import tz.co.fishhappy.app.utility.Utils;
@@ -108,12 +100,10 @@ public class FishAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 final FishModel model = mList.get(position);
                 ((ViewHolder) vh).tvName.setText(model.getName());
                 ((ViewHolder) vh).tvPrice.setText(Utils.formatToMoney(
-                        String.valueOf(model.getPrice())) + " Tshs");
-
-                System.out.println("https://hooli.bongomusicawards.co.tz/" + model.getPhoto().getUrl());
-
+                        String.valueOf(model.getPrice())) + " TSH");
                         Picasso.get()
-                       .load("https://hooli.bongomusicawards.co.tz/" + model.getPhoto().getUrl()) // This will be used to retrieve image of the fish.
+                       //.load("https://hooli.bongomusicawards.co.tz/storage/images/KING-FISH.jpg" + model.getPhoto().getUrl()) // This will be used to retrieve image of the fish.
+                       .load("https://hooli.bongomusicawards.co.tz/storage/images/KING-FISH.jpg") // This will be used to retrieve image of the fish.
  //                       .load(Uri.parse("https://hooli.bongomusicawards.co.tz/storage/images/fish%201.jpg"))
                         .error(R.drawable.splash_screen)
                         .placeholder(R.drawable.splash_screen)

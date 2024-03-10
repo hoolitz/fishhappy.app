@@ -4,18 +4,13 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,22 +20,10 @@ import butterknife.OnClick;
 import io.realm.Realm;
 import io.realm.RealmChangeListener;
 import io.realm.RealmResults;
-import retrofit2.Call;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 import tz.co.fishhappy.app.R;
 import tz.co.fishhappy.app.adapter.CartAdapter;
 import tz.co.fishhappy.app.data.CartRealmObject;
-import tz.co.fishhappy.app.endpoint.CartService;
-import tz.co.fishhappy.app.endpoint.EndPointsUrls;
-import tz.co.fishhappy.app.endpoint.RegisterService;
-import tz.co.fishhappy.app.model.CartModel;
 import tz.co.fishhappy.app.model.CartProductRequestModel;
-import tz.co.fishhappy.app.model.CartRequestModel;
-import tz.co.fishhappy.app.model.CartResponseModel;
-import tz.co.fishhappy.app.model.RegisterModel;
-import tz.co.fishhappy.app.model.RegisterResponseModel;
 import tz.co.fishhappy.app.utility.Utils;
 
 /**

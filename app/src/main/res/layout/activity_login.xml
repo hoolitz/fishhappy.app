@@ -20,7 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:src="@drawable/fishhappy_white" />
+            android:src="@drawable/fishhappy_white"
+            />
 
         <LinearLayout
             android:layout_marginTop="20dp"
@@ -35,7 +36,7 @@
             android:paddingRight="16dp"
             android:paddingBottom="32dp">
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="@color/brown_500">
@@ -52,9 +53,9 @@
                     android:scrollHorizontally="true"
                     android:textColor="@color/brown_900"
                     android:textColorHint="@color/brown_500" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="@color/brown_500">
@@ -70,7 +71,7 @@
                     android:maxLines="1"
                     android:scrollHorizontally="true"
                     android:textColor="@color/brown_900" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/tvLoginForgotPassword"

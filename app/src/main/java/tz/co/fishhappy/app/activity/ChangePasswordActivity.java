@@ -4,7 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,11 +23,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import tz.co.fishhappy.app.R;
 import tz.co.fishhappy.app.endpoint.ChangePasswordService;
 import tz.co.fishhappy.app.endpoint.EndPointsUrls;
-import tz.co.fishhappy.app.endpoint.ForgotPasswordResetService;
 import tz.co.fishhappy.app.model.ChangePasswordModel;
 import tz.co.fishhappy.app.model.ChangePasswordResponseModel;
-import tz.co.fishhappy.app.model.ForgotPasswordResetModel;
-import tz.co.fishhappy.app.model.ForgotPasswordResetResponseModel;
 import tz.co.fishhappy.app.utility.Utils;
 
 /**

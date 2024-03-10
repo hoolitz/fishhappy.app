@@ -3,7 +3,7 @@ package tz.co.fishhappy.app.activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,11 +21,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import tz.co.fishhappy.app.R;
 import tz.co.fishhappy.app.endpoint.EndPointsUrls;
 import tz.co.fishhappy.app.endpoint.ForgotPasswordService;
-import tz.co.fishhappy.app.endpoint.RegisterService;
 import tz.co.fishhappy.app.model.ForgotPasswordModel;
 import tz.co.fishhappy.app.model.ForgotPasswordResponseModel;
-import tz.co.fishhappy.app.model.RegisterModel;
-import tz.co.fishhappy.app.model.RegisterResponseModel;
 import tz.co.fishhappy.app.utility.Utils;
 
 /**

@@ -4,7 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -54,7 +54,8 @@ public class LoginActivity extends BaseAppCompatActivity {
         setTitle("Login");
         ButterKnife.bind(this);
 
-        mPref = getSharedPreferences(getString(R.string.pref_main), MODE_PRIVATE);
+        mPref = getSharedPreferences(
+                getString(R.string.pref_main), MODE_PRIVATE);
         mEditor = mPref.edit();
 
         //Init progress dialog
@@ -96,7 +97,7 @@ public class LoginActivity extends BaseAppCompatActivity {
 
         Call call = service.login(new LoginModel(mEtUsername.getText().toString(), mEtPassword.getText().toString()));
 
-        call.enqueue(new retrofit2.Callback<   LoginResponseModel>() {
+        call.enqueue(new retrofit2.Callback<LoginResponseModel>() {
                 @Override
                 public void onResponse(Call<LoginResponseModel> call,
                                        Response<LoginResponseModel> response) {

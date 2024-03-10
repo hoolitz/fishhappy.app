@@ -2,13 +2,11 @@ package tz.co.fishhappy.app.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,13 +14,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 import tz.co.fishhappy.app.R;
 import tz.co.fishhappy.app.activity.AboutActivity;
 import tz.co.fishhappy.app.activity.ChangePasswordActivity;
-import tz.co.fishhappy.app.activity.LoginActivity;
 import tz.co.fishhappy.app.activity.NotificationActivity;
 import tz.co.fishhappy.app.activity.ShippingManagementActivity;
 import tz.co.fishhappy.app.activity.UserAccountActivity;

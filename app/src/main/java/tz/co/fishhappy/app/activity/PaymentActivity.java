@@ -2,13 +2,12 @@ package tz.co.fishhappy.app.activity;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.MenuItem;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebResourceRequest;
@@ -30,15 +29,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 import tz.co.fishhappy.app.R;
 import tz.co.fishhappy.app.endpoint.EndPointsUrls;
 import tz.co.fishhappy.app.endpoint.GetPayService;
-import tz.co.fishhappy.app.endpoint.LoginService;
 import tz.co.fishhappy.app.endpoint.PaymentService;
-import tz.co.fishhappy.app.model.LoginModel;
-import tz.co.fishhappy.app.model.LoginResponseModel;
 import tz.co.fishhappy.app.utility.Utils;
 
 /**
