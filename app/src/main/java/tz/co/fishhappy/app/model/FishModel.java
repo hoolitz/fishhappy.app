@@ -7,6 +7,9 @@ public class FishModel{
 	@SerializedName("size")
 	private String size;
 
+	@SerializedName("imageUrl")
+	private String imageUrl;
+
 	@SerializedName("category_id")
 	private int categoryId;
 
@@ -36,6 +39,14 @@ public class FishModel{
 
 	@SerializedName("is_favourite")
 	private boolean isFavourite;
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
 
 	public void setSize(String size){
 		this.size = size;
@@ -130,8 +141,9 @@ public class FishModel{
 		return 
 			"FishModel{" + 
 			"size = '" + size + '\'' + 
-			",category_id = '" + categoryId + '\'' + 
-			",updated_at = '" + updatedAt + '\'' + 
+			",category_id = '" + categoryId + '\'' +
+			",imageUrl = '" + imageUrl + '\'' +
+			",updated_at = '" + updatedAt + '\'' +
 			",price = '" + price + '\'' + 
 			",name = '" + name + '\'' + 
 			",weight = '" + weight + '\'' + 

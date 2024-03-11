@@ -103,7 +103,7 @@ public class FishAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                         String.valueOf(model.getPrice())) + " TSH");
                         Picasso.get()
                        //.load("https://hooli.bongomusicawards.co.tz/storage/images/KING-FISH.jpg" + model.getPhoto().getUrl()) // This will be used to retrieve image of the fish.
-                       .load("https://hooli.bongomusicawards.co.tz/storage/images/KING-FISH.jpg") // This will be used to retrieve image of the fish.
+                       .load("https://hooli.bongomusicawards.co.tz/"+model.getImageUrl()) // This will be used to retrieve image of the fish.
  //                       .load(Uri.parse("https://hooli.bongomusicawards.co.tz/storage/images/fish%201.jpg"))
                         .error(R.drawable.splash_screen)
                         .placeholder(R.drawable.splash_screen)
