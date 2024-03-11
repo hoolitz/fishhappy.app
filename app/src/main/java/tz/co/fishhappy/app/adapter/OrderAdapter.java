@@ -91,7 +91,7 @@ public class OrderAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                 }
             }
 
-            ((ViewHolder) vh).tvOrderTotal.setText(Utils.formatToMoney(String.valueOf(total)) + " Tshs");
+            ((ViewHolder) vh).tvOrderTotal.setText(Utils.formatToMoney(String.valueOf(total)) + " TSH");
             ((ViewHolder) vh).tvOrderItems.setText(items);
             ((ViewHolder) vh).tvOrderStatus.setText(model.getStatus());
             ((ViewHolder) vh).bnCancelOrder.setOnClickListener(new View.OnClickListener() {
